@@ -11,3 +11,9 @@ sum_len = 0
 for d in data:
 	sum_len += len(d) #sum_len = sum_len + len(d)
 print(sum_len / len(data))
+
+result = []
+for cast in data:
+	if len(cast) > 500:
+		result.append(cast)
+print(len(result))
