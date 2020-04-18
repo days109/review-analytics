@@ -6,3 +6,8 @@ with open('reviews.txt', 'r') as f:
 		count += 1
 		if count % 100000 == 0:
 			print(len(data))
+
+sum_len = 0
+for d in data:
+	sum_len += len(d) #sum_len = sum_len + len(d)
+print(sum_len / len(data))
